@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PM2E10114</string>
+    <string name="select">Select</string>
+    <string name="numero">0000-0000</string>
+    <string name="notas">escribir...</string>
+    <string name="btnfoto">Tomar Foto</string>
+    <string name="btnnfoto">Selecionar de galeria</string>
+</resources>

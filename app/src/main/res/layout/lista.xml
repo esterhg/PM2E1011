@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFF0FC"
+    android:backgroundTint="#EFF0FC"
+    android:orientation="vertical"
+    tools:context=".Contactos">
+
+
+    <ListView
+        android:id="@+id/listpersonas"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="23dp"
+        android:divider="@android:color/darker_gray"
+        app:layout_constraintBottom_toTopOf="@+id/btnCompartir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+
+
+
+    <Button
+        android:id="@+id/btnCompartir"
+        style="@style/Theme.PM2E180114"
+        android:layout_width="182dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="#009688"
+        android:text="Compartir Contacto"
+        android:textColor="#E9ECEB"
+        app:layout_constraintBottom_toTopOf="@+id/btneliminar"
+        app:layout_constraintEnd_toStartOf="@+id/btnImg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listpersonas" />
+
+    <Button
+        android:id="@+id/btnImg"
+        style="@style/Theme.PM2E180114"
+        android:layout_width="192dp"
+        android:layout_height="83dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="#009688"
+        android:text="Ver Imagen"
+        app:layout_constraintBottom_toTopOf="@+id/btnactualizar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnCompartir"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+    <Button
+        android:id="@+id/btneliminar"
+        style="@style/Theme.PM2E180114"
+        android:layout_width="178dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="35dp"
+        android:backgroundTint="#009688"
+        android:text="Eliminar Contacto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnactualizar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCompartir" />
+
+
+    <Button
+        android:id="@+id/btnactualizar"
+        style="@style/Theme.PM2E180114"
+        android:layout_width="192dp"
+        android:layout_height="87dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="35dp"
+        android:backgroundTint="#009688"
+        android:text="Actualizar Contacto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btneliminar"
+        app:layout_constraintTop_toBottomOf="@+id/btnImg" />
+
+
+    <Button
+        android:id="@+id/btnatras"
+        style="@style/Theme.PM2E180114"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#879393"
+        android:text="Atras"
+        app:layout_constraintBottom_toTopOf="@+id/searchView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="447dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnImg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
